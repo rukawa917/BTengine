@@ -90,10 +90,3 @@ class BollingerBandTF(Strategy):
         df = df.set_index('date', drop=True)
 
         return df
-
-# class MAcrossOver(Strategy):
-#     def __init__(self, ord_type: str, slippage: float, price_data: pd.DataFrame, indicator: pd.DataFrame, train: bool):
-#         super().__init__(ord_type, slippage, price_data, train)
-#         self.indicator = indicator
-#
-#     def generate_signal(self):
